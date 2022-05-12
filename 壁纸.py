@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2022/4/28 11:12
 # @Author  : RooFTOooOP
-# @FileName: 1_2_壁纸.py
+# @FileName: 壁纸.py
 # @Software: PyCharm
-# @Blog    ：https://blog.csdn.net/qq_41800366
+# @Blog    ：https://cuijiahua.com/
 
 
 # -*- coding:UTF-8 -*-
