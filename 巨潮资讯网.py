@@ -37,9 +37,8 @@ headers= {'Accept': 'application/json, text/javascript, */*; q=0.01',
           }
 
 def single_page(page):
-    # target = 'http://www.cninfo.com.cn/new/fulltextSearch/full?searchkey=%E9%A3%9F+%E5%AF%B9%E5%A4%96%E6%8A%95%E8%B5%84&sdate=&edate=&isfulltext=false&sortName=pubdate&sortType=desc&pageNum=' + str(page+1)
-    # target = 'http://www.cninfo.com.cn/new/index'
-    target = 'http://www.cninfo.com.cn/new/fulltextSearch'
+    target = 'http://www.cninfo.com.cn/new/fulltextSearch/full?searchkey=%E9%A3%9F+%E5%AF%B9%E5%A4%96%E6%8A%95%E8%B5%84&sdate=&edate=&isfulltext=false&sortName=pubdate&sortType=desc&pageNum=' + str(page+1)
+
     # target = 'http://www.cninfo.com.cn/new/disclosure'
     # payload = {'column': 'szse_latest',
     #             'pageNum': 3,
@@ -47,16 +46,10 @@ def single_page(page):
     #             'sortName': '',
     #             'sortType': '',
     #             'clusterFlag': 'true',}
-    payload = {'searchkey':'%E9%A3%9F+%E5%AF%B9%E5%A4%96%E6%8A%95%E8%B5%84',
-               'sdate':'',
-               'edate':'',
-               'isfulltext':'false',
-               'sortName':'pubdate',
-               'sortType':'desc',
-               'pageNum':page+1}
+
     # pay = str(payload)
     headers['User-Agent'] = random.choice(User_Agent)
-    req = requests.post(url=target, headers=headers, data=payload)
+    req = requests.get(url=target, headers=headers)
     return req.json()['classifiedAnnouncements']
 
 
