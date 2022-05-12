@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2022/5/8 17:11
 # @Author  : RooFTOooOP
-# @FileName: 1_3动漫.py
+# @FileName: 动漫.py
 # @Software: PyCharm
 # @Blog    ：https://cuijiahua.com/blog/2020/04/spider-8.html
 
