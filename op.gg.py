@@ -43,7 +43,7 @@ class downloader(object):
         self.urls = []  # 存放对应链接
         self.hero_images = [] # 存放对应英雄头像
         self.headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36',
-                        'cookie': 'uids=eyJ1aWRzIjp7fSwidGVtcFVJRHMiOnsibmhuYWNlIjp7InVpZCI6IlpON01VTkxERVhOVjJBMkE5MTdYRUE0RVEiLCJleHBpcmVzIjoiMjAyMi0wNS0xMlQwODowMTo0NC4wODc2NDZaIn19LCJiZGF5IjoiMjAyMi0wNC0yOFQwODowMTo0NC4wODc2MjJaIn0=',
+
                         'Accept-Language': 'zh-CN'}
 
 
